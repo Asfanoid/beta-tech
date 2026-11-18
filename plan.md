@@ -34,6 +34,14 @@ A recent `npm audit` reported 16 high-severity findings, including a `picomatch`
 - If a fix requires a breaking upgrade, assess compatibility and document any deferral; monitor upstream for a safer fix.
 - Rerun `npm audit`, tests, lint, and build after dependency updates.
 
+## 5. Test coverage and efficiency
+
+Review the existing tests to identify meaningful coverage gaps, redundant scenarios, and unnecessary implementation-specific assertions.
+
+- Prioritize critical workflows, state transitions, and failure handling.
+- Consolidate overlapping tests where they provide little additional confidence.
+- Use coverage reports as guidance rather than targeting coverage percentages alone.
+
 ## Priorities
 
-Tablet navigation and status presentation are user-facing refinements. Workbench refactoring and dependency remediation should be prioritized according to maintainability benefits, security exposure, compatibility, and risk.
+Tablet navigation and status presentation are user-facing refinements. Dependency remediation, testing improvements, and workbench refactoring should be evaluated according to risk, maintainability, and practical benefit.
