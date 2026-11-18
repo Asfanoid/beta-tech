@@ -1,0 +1,39 @@
+
+
+.confirmation-panel h3 {
+  margin: 0;
+  color: #29494c;
+  font-size: 15px;
+  font-weight: 720;
+}
+
+.confirmation-panel {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #ead4ae;
+  border-radius: 14px;
+  background: #fffbf3;
+}
+
+.confirmation-panel > p {
+  margin: 0;
+  color: #4e6263;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.confirmation-kicker {
+  color: #8c5a18;
+}
+
+.confirmation-warning {
+  margin: 0;
+}
+
+.confirmation-context {
+  overflow-wrap: anywhere;
+  padding: 9px 10px;
+  border-radius: 8px;
+  background: #ffffff;
+}

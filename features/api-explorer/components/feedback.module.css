@@ -1,0 +1,72 @@
+.empty-copy,
+.loading-copy {
+  margin: 8px 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.error-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 0 19px 17px;
+  padding: 12px 13px;
+  border: 1px solid #f0d0ce;
+  border-radius: 11px;
+  background: var(--error-bg);
+}
+
+.error-box p {
+  margin: 0;
+  color: var(--error);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.shared-part-warning {
+  margin: 1px 0 2px;
+  padding: 10px 11px;
+  border-left: 3px solid #d2a153;
+  border-radius: 5px 9px 9px 5px;
+  background: var(--warning-bg);
+  color: #75501e;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.inline-error,
+.inline-success {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.inline-error {
+  color: var(--error);
+}
+
+.inline-success {
+  color: #26714a;
+}
+
+.diagnostics-disclosure {
+  margin-top: 12px;
+  border-top: 1px solid #e8efed;
+}
+
+.diagnostics-disclosure > summary {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 15px;
+  color: #647a7d;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.diagnostics-disclosure[open] > summary {
+  color: #365558;
+}

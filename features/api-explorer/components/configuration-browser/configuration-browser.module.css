@@ -1,0 +1,131 @@
+
+
+.configuration-panel {
+  overflow: visible;
+}
+
+.machine-selector label {
+  color: #3d595d;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.machine-selector {
+  display: grid;
+  gap: 8px;
+  padding: 18px 22px;
+  border-top: 1px solid #edf2f1;
+  border-bottom: 1px solid #edf2f1;
+  background: #f8fbfa;
+}
+
+.machine-combobox {
+  position: relative;
+}
+
+.machine-combobox input {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0 13px;
+  border: 1px solid #ccd9d7;
+  border-radius: 10px;
+  background: #ffffff;
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.machine-options {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  max-height: min(42vh, 320px);
+  overflow: auto;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #ccd9d7;
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgb(20 50 53 / 14%);
+  list-style: none;
+}
+
+.machine-options li {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 12px;
+  border-radius: 8px;
+  color: #28494d;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.machine-options li[aria-selected="true"] {
+  background: #edf7f4;
+}
+
+.machine-options li.machine-option-highlighted {
+  background: #edf7f4;
+}
+
+.machine-options li.machine-option-empty {
+  color: var(--muted);
+  cursor: default;
+}
+
+.selected-machine-label {
+  margin: 0;
+  color: #516c6e;
+  font-size: 12px;
+}
+
+.selected-machine-label strong {
+  color: #24464a;
+}
+
+.machine-list-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.root-list {
+  padding: 17px 19px 19px;
+}
+
+.root-list {
+  max-height: min(64vh, 720px);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.machine-context {
+  margin-bottom: 14px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e8efee;
+}
+
+.machine-context h3 {
+  margin: 4px 0 0;
+  color: #24464a;
+  font-size: 19px;
+  font-weight: 720;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+
+  .machine-selector {
+    padding-right: 17px;
+    padding-left: 17px;
+  }
+
+  .root-list {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}

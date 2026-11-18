@@ -1,0 +1,87 @@
+:global(button),
+:global(input),
+:global(select) {
+  font: inherit;
+}
+
+:global(button) {
+  cursor: pointer;
+}
+
+:global(button:focus-visible),
+:global(input:focus-visible),
+:global(select:focus-visible) {
+  outline: 3px solid #5bbab0;
+  outline-offset: 2px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 11px;
+  font-size: 13px;
+  font-weight: 680;
+  line-height: 1;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    transform 120ms ease;
+}
+
+.button:not(:disabled):active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.button-primary:not(:disabled):hover {
+  background: var(--accent-deep);
+}
+
+.button-secondary {
+  border-color: #bedbd5;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+}
+
+.button-secondary:not(:disabled):hover {
+  border-color: #8fc1b7;
+  background: #d9eee9;
+}
+
+.button-quiet {
+  min-height: 48px;
+  padding: 0 12px;
+  border-color: var(--line);
+  background: #ffffff;
+  color: #365558;
+  font-size: 12px;
+}
+
+.button-quiet:not(:disabled):hover {
+  border-color: #b7cfca;
+  background: #f4f9f8;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.form-actions > .button {
+  flex: 1 1 150px;
+}

@@ -1,0 +1,155 @@
+
+
+.configuration-tree-list {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.configuration-tree-item {
+  min-width: 0;
+  list-style: none;
+}
+
+.configuration-tree-row {
+  display: grid;
+  grid-template-columns: 39px minmax(0, 1fr);
+  gap: 3px;
+  min-height: 58px;
+  padding: 5px 6px 5px 0;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease;
+}
+
+.configuration-tree-row:hover {
+  background: #f5f9f8;
+}
+
+.configuration-tree-row-selected {
+  border-color: #c9e2dc;
+  background: #edf7f4;
+}
+
+.tree-toggle {
+  display: grid;
+  width: 39px;
+  height: 48px;
+  place-items: center;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #52716f;
+}
+
+.tree-toggle:disabled {
+  cursor: wait;
+}
+
+.tree-toggle:hover {
+  background: #e9f1ef;
+}
+
+.tree-leaf-indicator {
+  display: grid;
+  width: 39px;
+  height: 48px;
+  place-items: center;
+  flex: 0 0 39px;
+}
+
+.tree-leaf-indicator span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #a7b7b4;
+}
+
+.tree-loading-indicator {
+  width: 14px;
+  height: 14px;
+  border: 2px solid #c5d8d4;
+  border-top-color: #3c9285;
+  border-radius: 50%;
+  animation: tree-spin 700ms linear infinite;
+}
+
+@keyframes tree-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tree-chevron {
+  width: 8px;
+  height: 8px;
+  border-top: 1.7px solid currentColor;
+  border-right: 1.7px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 120ms ease;
+}
+
+.tree-chevron-expanded {
+  transform: rotate(135deg);
+}
+
+.tree-select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 4px 7px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+}
+
+.tree-node-title {
+  overflow: hidden;
+  color: #24464a;
+  font-size: 13px;
+  font-weight: 720;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tree-node-meta {
+  overflow: hidden;
+  margin-top: 4px;
+  color: #748887;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.configuration-tree-list .configuration-tree-list {
+  margin: 3px 0 3px 13px;
+  padding-left: 6px;
+  border-left: 1px solid #dce9e6;
+}
+
+.tree-message {
+  margin: 4px 0 9px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tree-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 5px 0 9px;
+}
+
+.tree-error p {
+  margin: 0;
+  color: var(--error);
+  font-size: 11px;
+  line-height: 1.4;
+}

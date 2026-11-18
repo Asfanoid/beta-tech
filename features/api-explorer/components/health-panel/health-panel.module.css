@@ -1,0 +1,65 @@
+
+
+.health-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a7b5b4;
+}
+
+.health-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0 23px 21px;
+}
+
+.health-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #f0f3f2;
+  color: #627473;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.health-indicator-online {
+  background: #e8f5ed;
+  color: #246144;
+}
+
+.health-indicator-online .health-dot {
+  background: #31955d;
+  box-shadow: 0 0 0 3px #d4efdd;
+}
+
+.health-result {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.health-result strong {
+  color: var(--ink);
+  font-size: 14px;
+}
+
+.health-result p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+
+  .health-content {
+    align-items: flex-start;
+    padding: 0 17px 17px;
+  }
+}

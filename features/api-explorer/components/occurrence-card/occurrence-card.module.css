@@ -1,0 +1,45 @@
+
+
+.occurrence-card {
+  display: grid;
+  gap: 7px;
+  padding: 14px 15px;
+  border: 1px solid #e0e9e7;
+  border-radius: 13px;
+  background: #ffffff;
+}
+
+.occurrence-card > p {
+  margin: 0;
+}
+
+.occurrence-card > strong {
+  margin: 0;
+}
+
+.occurrence-card > strong {
+  color: #304e51;
+  font-size: 13px;
+}
+
+.occurrence-path {
+  overflow-wrap: anywhere;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.occurrence-quantity {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 7px;
+  border-top: 1px solid #e8efed;
+  color: #617574;
+  font-size: 11px;
+}
+
+.occurrence-quantity strong {
+  color: #28494d;
+  font-size: 14px;
+}
